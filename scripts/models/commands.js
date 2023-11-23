@@ -195,7 +195,7 @@ let commands = {
                 return message.channel.send(embed)
             }
             if (command === "prefix") {
-                if (!member.hasPermission("MANAGE_SERVER")) {
+                if (!member.hasPermission("MANAGE_GUILD")) {
                     let embed = design.embed("Prefix", "You do not have the required permissions to use this command.", "#f5261d")
                     return message.channel.send(embed)
                 }
